@@ -64,7 +64,7 @@ code {
 }
 
 .tab-title {
-
+  color: #ececec;
   margin-left: 0.2em;
   border: 2px solid #ececec;
   border-bottom: #d6d6d6;
@@ -72,6 +72,11 @@ code {
   padding-top: 0.2em;
   padding-bottom: 0;
   border-radius: 10px 10px 0px 0px;
+}
+
+.selected-tab-title {
+  color: black;
+  border-color: black;
 }
 
 .tab-content-wrapper {

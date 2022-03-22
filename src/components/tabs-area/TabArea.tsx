@@ -19,7 +19,9 @@ export const TabArea: FC<Props> = ({ tabsMiniContent }) => {
         <div>
             <div className="tabs">
                 {tabsMiniContent.map((miniContent, i) =>
-                    <div onClick={ () => selectTabHandeler(i) } className='tab-title'>
+                    <div
+                        onClick={() => selectTabHandeler(i)}
+                        className={`tab-title ${selectedTabIndex == i ? 'selected-tab-title' : i}`}>
                         <Tab key={i} tabText={miniContent.title} />
                     </div>
                 )}
